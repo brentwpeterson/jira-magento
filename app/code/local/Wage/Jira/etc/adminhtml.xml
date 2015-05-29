@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <menu>
+        <jira module="jira">
+            <title>Jira Dashboard</title>
+            <sort_order>15</sort_order>
+            <children>
+                <open_tickets translate="title" module="jira">
+                    <title>Tickets</title>
+                    <action>jira/adminhtml_tickets</action>
+                </open_tickets>
+                <projects translate="title" module="jira">
+                    <title>Projects</title>
+                    <action>jira/adminhtml_projects</action>
+                </projects>
+            </children>
+        </jira>
+    </menu>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <jira translate="title" module="jira">
+                                        <title>Wagento jira integration</title>
+                                    </jira>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+<config>
+    <tabs>
+        <wage translate="label" module="jira">
+            <label>Wagento</label>
+            <sort_order>50</sort_order>
+        </wage>
+    </tabs>
+    <sections>
+        <jira translate="label" module="jira">
+            <label>Jira Integration</label>
+            <sort_order>10</sort_order>
+            <tab>wage</tab>
+            <show_in_default>1</show_in_default>se
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <general translate="label" module="jira">
+                    <label>Settings</label>
+                    <sort_order>5</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <host translate="label" module="jira">
+                            <label>API Host</label>
+                            <comment>needs to begin with http:// or https://</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </host>
+                        <username translate="label" module="jira">
+                            <label>Username</label>
+                            <comment></comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>05</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </username>
+                        <Password translate="label" module="jira">
+                            <label>Password</label>
+                            <comment></comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </Password>
+                        <jiralog translate="label">
+                            <label>Enable debug logs</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>15</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </jiralog>
+                    </fields>
+                </general>
+                <projects translate="label" module="jira">
+                    <label>Projects</label>
+                    <sort_order>6</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <projectskey translate="label" module="jira">
+                            <label>Projects Key</label>
+                            <comment>Comma separated project key to pull tickets.</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </projectskey>
+                        <projectspermalink translate="label" module="jira">
+                            <label>Codebase Project Permalink</label>
+                            <comment>Specify codebase project permalink.</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </projectspermalink>
+                        <assignee translate="label" module="jira">
+                            <label>Codebase Tickets Assignee</label>
+                            <comment>Select tickets assignee.</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>codebase/system_config_source_users</source_model>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </assignee>
+                    </fields>    
+                </projects>        
+            </groups>
+        </jira>
+    </sections>
+</config>

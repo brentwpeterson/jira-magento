@@ -1,0 +1,4 @@
+app/code/local/Wage/Jira/	app/code/local/Wage/Jira/
+app/etc/modules/Wage_Jira.xml	app/etc/modules/Wage_Jira.xml
+shell/importjiratickets.php	shell/importjiratickets.php
+
